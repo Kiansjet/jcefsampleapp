@@ -37,7 +37,7 @@ public class MainFrame extends JFrame {
     private final CefApp cefApp_;
     private final CefClient client_;
     private final CefBrowser browser_;
-    private final Component browerUI_;
+    private final Component browserUI_;
     private boolean browserFocus_ = true;
 
     /**
@@ -114,7 +114,7 @@ public class MainFrame extends JFrame {
         //     The UI component is inherited from a java.awt.Component and therefore
         //     it can be embedded into any AWT UI.
         browser_ = client_.createBrowser(startURL, useOSR, isTransparent);
-        browerUI_ = browser_.getUIComponent();
+        browserUI_ = browser_.getUIComponent();
 
         // (5) For this minimal browser, we need only a text field to enter an URL
         //     we want to navigate to and a CefBrowser window to display the content
@@ -169,7 +169,7 @@ public class MainFrame extends JFrame {
         // (6) All UI components are assigned to the default content pane of this
         //     JFrame and afterwards the frame is made visible to the user.
         getContentPane().add(address_, BorderLayout.NORTH);
-        getContentPane().add(browerUI_, BorderLayout.CENTER);
+        getContentPane().add(browserUI_, BorderLayout.CENTER);
         pack();
         setSize(800, 600);
         setVisible(true);

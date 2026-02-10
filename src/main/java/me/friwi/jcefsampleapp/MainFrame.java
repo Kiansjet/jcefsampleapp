@@ -81,7 +81,7 @@ public class MainFrame extends JFrame {
         //     instance.
         cefApp_ = builder.build();
 
-        // (2) JCEF can handle one to many browser instances simultaneous. These
+        // (2) JCEF can handle one to many browser instances simultaneously. These
         //     browser instances are logically grouped together by an instance of
         //     the class CefClient. In your application you can create one to many
         //     instances of CefClient with one to many CefBrowser instances per
@@ -109,7 +109,7 @@ public class MainFrame extends JFrame {
         //
         //     CefBrowser has methods like "goBack()", "goForward()", "loadURL()",
         //     and many more which are used to control the behavior of the displayed
-        //     content. The UI is held within a UI-Compontent which can be accessed
+        //     content. The UI is held within a UI-Component which can be accessed
         //     by calling the method "getUIComponent()" on the instance of CefBrowser.
         //     The UI component is inherited from a java.awt.Component and therefore
         //     it can be embedded into any AWT UI.
